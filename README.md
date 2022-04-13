@@ -1,7 +1,7 @@
 # blackIce_Project
 # 상태(dry-water-ice) 감지
 
-# 세부 프로젝트 진행 상황은 아래 링크
+# 세부 프로젝트 진행 상황은 아래 링크 (이미지 안뜨면 링크로 가주세요)
 https://tender-king-5a0.notion.site/Android-Studio-1e3043f6e1c4456d87c789f2dd14e357
 
 # 모델 선정 
