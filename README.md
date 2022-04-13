@@ -3,10 +3,12 @@
 
 # 세부 프로젝트 진행 상황은 아래 링크 (이미지 안뜨면 링크로 가주세요)
 https://tender-king-5a0.notion.site/Android-Studio-1e3043f6e1c4456d87c789f2dd14e357
+# 모바일 어플은 
+https://github.com/pgs2285/blackIce_mobile_application
 
-# 모델 선정 
+## 모델 선정 
 
-# 이미지 수집
+## 이미지 수집
 
 ![A8D04619-9511-4EDD-A4AD-CD3D0F3D5F17_1_105_c.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7a494094-562c-41f7-9dd3-5ed2554a4678/A8D04619-9511-4EDD-A4AD-CD3D0F3D5F17_1_105_c.jpeg)
 
@@ -14,7 +16,7 @@ https://tender-king-5a0.notion.site/Android-Studio-1e3043f6e1c4456d87c789f2dd14e
 
 이미지는 여러 경우 - (아스팔트 색, 차선의 여부)등을 고려해 최대한 많은 이미지를 수집할 계획.
 
-# scikit learn - SGDClassifier
+## scikit learn - SGDClassifier
 
 ![2022-01-25_02-09-11.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6cb457dd-1f1f-4855-9ca0-cf1711576cd7/2022-01-25_02-09-11.png)
 
@@ -22,11 +24,11 @@ scikit learn cheat sheet를 따라가 적은 이미지의 분류기인 SGDClassi
 
 **추후 이미지의 개수가 늘어나면, Linear SVC혹은 KNeighbors Classifier사용**
 
-# SGDClassifier를 사용하기 위한 데이터 가공
+## SGDClassifier를 사용하기 위한 데이터 가공
 
 SGDClassifier를 사용하기 위해 수치데이터를 모집해야 하는데, grayScale의 빈도를 이용해 수치값을 뽑아내기로 결정함
 
-## dry-water-ice /  normal
+### dry-water-ice /  normal
 
 ![이미지 여러장의 grayscale 빈도값 gif파일](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8654211c-d7ae-49ba-a102-705938430071/water_dry_ice_normal.gif)
 
@@ -38,7 +40,7 @@ SGDClassifier를 사용하기 위해 수치데이터를 모집해야 하는데, 
 
 dry- water- ice 이미지 
 
-## 문제점
+### 문제점
 
 ![좌-우 사진 water의 빛반사율 때문에 차이가 심한모습](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c345711b-abc1-4fe4-8bfb-15b0588b6891/normal_img.png)
 
@@ -51,7 +53,7 @@ dry- water- ice 이미지
 1. 특정 사진에 따라서, 육안으로도 차이를 보기힘든 사진이 있음. (그래프의 큰 차이가 없어 분류가 힘든 케이스)
 2. water 의 빛 반사율의 여부에 따라 200이후의 값들이 너무 튄다. (water의 반사율의 편차가 심한경우)
 
-## 문제 1 (그래프의 큰 차이가 없어 분류가 힘든 케이스) 해결방안 - 
+### 문제 1 (그래프의 큰 차이가 없어 분류가 힘든 케이스) 해결방안 - 
 dry-water-ice / sqr
 
 위 이미지는 빈도를 분석하기에는 편차가 적어 제곱을 해본 결과값
@@ -69,7 +71,7 @@ sqr이미지 비교 값 - 보다 값들마다의 차이를 보기 편했다.
 
 </aside>
 
-## 문제 2 (water의 반사율의 편차가 심한경우) 해결 방안
+### 문제 2 (water의 반사율의 편차가 심한경우) 해결 방안
 
 ### 이미지 데이터 증강
 
