@@ -1,12 +1,11 @@
-# blackIce_Project
-# 상태(dry-water-ice) 감지
+
 
 # 세부 프로젝트 진행 상황은 아래 링크 (이미지 안뜨면 링크로 가주세요)
 https://tender-king-5a0.notion.site/Android-Studio-1e3043f6e1c4456d87c789f2dd14e357
-# 모바일 어플은 
+# 모바일 어플은  (위 노션링크에 어플리케이션 진행과정)
 https://github.com/pgs2285/blackIce_mobile_application
 
-## 모델 선정 
+## 모델 선정 개요
 
 ## 이미지 수집
 
